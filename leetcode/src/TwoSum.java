@@ -41,5 +41,11 @@ public class TwoSum {
         int target3 = 6;
         int[] result3 = solution.twoSum(nums3, target3);
         System.out.println("Test 3: " + Arrays.toString(result3)); // Expected: [0, 1]
+
+        // Test case 4
+        int[] nums4 = {2, 5, 5, 11};
+        int target4 = 15;
+        int[] result4 = solution.twoSum(nums4, target4);
+        System.out.println("Test 4: " + Arrays.toString(result4)); // Expected: [1, 2]
     }
 }
