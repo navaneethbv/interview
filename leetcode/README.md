@@ -25,10 +25,11 @@ leetcode/
 ./run.sh <ClassName>
 ```
 
-### 3. Run with Custom Input
-```bash
-echo "your input" | ./run.sh <ClassName>
-```
+### 3. Supply input when a solution supports it
+
+The committed examples use hard-coded cases in their `main` methods.
+Piping input only affects a solution that explicitly reads standard input.
+The compile helper builds `src/*.java`; it does not build or execute `test/TestTemplate.java`.
 
 ## Example
 
