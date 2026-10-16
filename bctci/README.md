@@ -1,44 +1,18 @@
-# Cracking the Coding Interview Java Solutions
+# BCTCI Java workspace
 
-This directory contains Java solutions for problems from "Cracking the Coding Interview" with an easy-to-use testing setup.
+This directory currently contains `compile.sh`, `run.sh`, and `test/TestTemplate.java`.
+No solution sources are committed, so compilation needs a solution added first.
 
-## Directory Structure
+## Add and run a solution
 
-```
-bctci/
-├── src/           # Java source files for solutions
-├── test/          # Test files and test cases
-├── compile.sh     # Script to compile Java files
-├── run.sh         # Script to run solutions
-└── README.md      # This file
-```
+From this directory, create `src/` and add a Java file with a matching public class and a `main` method.
+For example, after adding `src/Example.java`:
 
-## How to Use
-
-### 1. Compile Java Files
-```bash
-./compile.sh
+```sh
+bash compile.sh
+bash run.sh Example
 ```
 
-### 2. Run a Specific Solution
-```bash
-./run.sh <ClassName>
-```
-
-### 3. Run with Custom Input
-```bash
-echo "your input" | ./run.sh <ClassName>
-```
-
-## Example
-
-1. Create your solution in `src/TwoSum.java`
-2. Compile: `./compile.sh`
-3. Run: `./run.sh TwoSum`
-
-## Adding New Problems
-
-1. Create a new Java file in the `src/` directory
-2. Follow the naming convention: `ProblemName.java`
-3. Include a main method for testing
-4. Compile and run using the provided scripts
+A JDK and Bash are required.
+The compiler helper writes classes from `src/*.java` to `bin/`.
+The test template is a starting point for authored cases; the helpers do not execute it automatically.
